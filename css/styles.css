@@ -1,0 +1,246 @@
+
+/*
+CSS
+THEME: CK Neon
+Website: Caleb Kopta
+Date: 2022
+Author: Benjamin Orrvick  */
+
+
+/* used for testing  */
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}   */
+
+
+/* #D183B7 */
+
+/* when menu is click there is nice scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+  
+/* BEGIN NAV BAR */
+/* changes color of navbar toggle switch */
+/* 56px is a good header height and is used a lot in making sure items dont go under header */
+header{
+  height: 56px;
+  background-color: #ffff;
+} 
+
+.navbar-toggler{
+  background-color: #D183B7;
+}
+
+/* so there is a background on mobile and toggle is clicked but there hasnt been any scrolling */
+@media(max-width:767px){
+  .navbar-collapse{
+  background-color: #ffff !important;
+  border-radius: 5px;
+  padding: 5px;
+  }
+  }
+
+.navbar-text{
+  font-family: Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #D183B7 !important;
+  font-size: 1.5em;
+}
+
+.navbar-text:hover{
+  color: #2d7eca !important;
+  transition: all 0.5s;
+}
+/* change color of background on scroll */
+/* #mainNav.scrolled {
+  background-color: #ffff !important;
+  transition: background-color 200ms linear;
+} */
+/* END NAV BAR */
+
+/* BEGIN BODY */
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  object-fit: center;
+  z-index: -1000;
+  right: 0;
+  bottom: 0;
+  min-width: 100vh; 
+  min-height: 100vh;
+}
+
+.small-text{
+  font-family: Helvetica;
+  color: #ffff;
+}
+
+/* makes all images animated on hover */
+img {
+  border-radius: 10px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  }
+  
+img:hover {
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+}
+/* END BODY */
+
+/* LIVE SECTION */
+.live > h3 , .live >h4 {
+  color: #2d7eca !important;
+}
+
+.live>p{
+  color: #ffff !important;
+  font-family: Helvetica;
+}
+
+.custom-section{
+  padding-top: 6em;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #D183B7 !important;
+}
+
+.button-custom{
+  background-color: #D183B7;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #ffff;
+}
+
+.bg-yellow {
+  background-color: #D183B7;
+}
+/* END LIVE SECTION */
+
+/* BIO SECTION */
+.bio-bg-img{
+  background-image:url('../assets/img/bio_bg_banner.JPG');
+  background-size: cover;
+  background-position: center;
+  font-family: Helvetica;
+  width: 100vw;
+  height: 50em;
+  color: #ffff;
+}
+
+.bio-text{
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+/* so there is a background on mobile and toggle is clicked but there hasnt been any scrolling */
+@media(max-width:530px){
+  .bio-bg-img{
+
+    font-size: .6em;
+  }
+}
+
+/* End BIO SECTION */
+
+/* LANDING SECTION */
+#landing>div>h3{
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2em;
+  color: #2d7eca !important;
+}
+
+.landing-bg-img{
+  background-image:url('../assets/img/background_banner.png');
+  /* background-size: cover; */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: 'Stoke', serif;
+  width: 100vw;
+  height: 60em;
+  color: #b8d3ed;
+}
+
+
+/* END LANDING SECTION */
+
+/* FOOTER SECTION */
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #000000a2;
+  color: #fff;
+}
+
+.copyright {
+  background-color: #000000cb;
+}
+/* END FOOTER SECTION */
+
+/* CONTACT SECTION */
+.contact-bg-img{
+  background-image:url('../assets/img/contact_banner.JPG');
+  background-size: cover;
+  background-position: center center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 60em;
+  color: #b8d3ed;
+}
+
+
+.formControl label i{
+  display:none;
+  padding: 5px;
+  visibility: hidden;
+}
+
+.formControl small{
+  font-family: Raleway, sans-serif;
+  display: block;
+  text-align: center;
+  visibility: hidden;
+  padding-bottom: 5px;
+}
+.formControl.error small{
+  visibility: visible !important;
+  color: #e74c3c !important;
+}
+
+.formControl.success input {
+  border: 2px solid #2ecc71 ;
+}
+
+.formControl.success label i.fa-check-circle{
+  display:inline-block;
+  visibility: visible;
+  color: #2ecc71 ;
+}
+
+.formControl.error input {
+  border: 2px solid #e74c3c !important;
+}
+.formControl.error label i.fa-exclamation-circle{
+  display:inline-block;
+  visibility: visible;
+  color: #e74c3c ;
+}
+
+/* END CONTACT SECTION */
